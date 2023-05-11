@@ -1,8 +1,10 @@
-package com.example.medicinedonator;
+package com.example.medicinedonator.User.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.medicinedonator.R;
 
 public class MainActivity extends AppCompatActivity {
 
