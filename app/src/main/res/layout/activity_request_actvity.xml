@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.Activities.RequestActvity">
+    <RelativeLayout
+        android:id="@+id/rL1"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginHorizontal="10dp">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_back" />
+
+        <TextView
+
+            android:id="@+id/Loggedinuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@+id/imgBack"
+            android:text="GIVE AID"
+            android:textColor="@color/blue"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request Medicine"
+            android:layout_below="@+id/Loggedinuser"
+            android:layout_toRightOf="@+id/imgBack"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/blue"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/NameView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name : "
+        android:layout_below="@+id/rL1"
+        android:layout_toLeftOf="@+id/Name"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/DescView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description : "
+        android:layout_below="@+id/NameView"
+        android:layout_toLeftOf="@+id/Desc"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/QtyView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quantity : "
+        android:layout_below="@+id/DescView"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/exdView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Expire Date : "
+        android:layout_below="@+id/QtyView"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/mfdView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manufacture Date : "
+        android:layout_below="@+id/exdView"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/CatView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Category : "
+        android:layout_below="@+id/mfdView"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+
+
+
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name : "
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rL1"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/Desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description : "
+        android:layout_below="@+id/NameView"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/Qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity : "
+        android:layout_below="@+id/DescView"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/exd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expire Date : "
+        android:layout_below="@+id/QtyView"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/mfd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manufacture Date : "
+        android:layout_below="@+id/exdView"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/Cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category : "
+        android:layout_below="@+id/mfdView"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:id="@+id/requstingQty"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Add Quantity : "
+        android:layout_below="@+id/Cat"
+        android:gravity="center_vertical"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/requstingQty"
+        android:layout_below="@+id/CatView"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:hint="Quantuty"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etQty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:inputType="number"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_blue"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="20dp"
+        android:text="Request"
+        android:textColor="@color/white"
+        />
+
+
+
+</RelativeLayout>

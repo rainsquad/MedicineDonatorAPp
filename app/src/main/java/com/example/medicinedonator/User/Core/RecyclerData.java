@@ -14,6 +14,12 @@ public class RecyclerData {
     private String Category;
     private String Password;
 
+    private  String _id;
+
+    public String get_id() {
+        return _id;
+    }
+
     public String getFirstName() {
         return FirstName;
     }
@@ -46,7 +52,7 @@ public class RecyclerData {
         return Password;
     }
 
-    public RecyclerData(String FirstName, String LastName, String Email, String Phone, String District, String Address, String Category, String Password) {
+    public RecyclerData(String FirstName, String LastName, String Email, String Phone, String District, String Address, String Category, String Password,String _id) {
         this.FirstName = FirstName;
         this.LastName = LastName;
         this.Email = Email;
@@ -55,5 +61,6 @@ public class RecyclerData {
         this.Address = Address;
         this.Category = Category;
         this.Password = Password;
+        this._id =_id;
     }
 }

@@ -71,52 +71,11 @@
         android:layout_below="@+id/rL1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/rL2"
+
+
         />
 
 
-    <RelativeLayout
-        android:id="@+id/rL2"
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:padding="20dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_horizontal"
-
-            >
-
-            <TextView
-                android:id="@+id/txtLOGIN"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginHorizontal="2dp"
-                android:background="@drawable/round_button_blue"
-                android:gravity="center"
-
-                android:text="Login"
-                android:textColor="@color/white"
-                android:textSize="12sp"
-                android:textStyle="normal" />
-
-            <TextView
-                android:id="@+id/txtSIGNUP"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginHorizontal="2dp"
-                android:background="@drawable/round_button_blue"
-                android:gravity="center"
-                android:textColor="@color/white"
-
-                android:text="Signup"
-                android:textSize="12sp"
-                android:textStyle="normal" />
-        </LinearLayout>
-    </RelativeLayout>
 
 </RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".User.Fragments.HomeFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/rL1"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginHorizontal="10dp">
+
+        <TextView
+
+            android:id="@+id/Loggedinuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:text="GIVE AID"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:text="Save a life tomorrow"
+            android:layout_below="@+id/Loggedinuser"
+            android:textColor="@color/blue"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/rL1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rL2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt1"
+
+        >
+
+        <TextView
+            android:id="@+id/txt1"
+            android:background="#01579B"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:paddingVertical="5dp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Ear,Nose and Throat"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="15dp"
+        />
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_below="@+id/recyclerView"
+            android:gravity="center_horizontal"
+            android:background="#01579B"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:paddingVertical="5dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Central nervous System"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView2"
+            android:layout_below="@+id/txt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="15dp"
+            />
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_below="@+id/recyclerView2"
+            android:gravity="center_horizontal"
+            android:background="#01579B"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:paddingVertical="5dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Muscles and Joints"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView3"
+            android:layout_below="@+id/txt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="15dp"
+            />
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_below="@+id/recyclerView3"
+            android:gravity="center_horizontal"
+            android:background="#01579B"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:paddingVertical="5dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Heart"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView4"
+            android:layout_below="@+id/txt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="15dp"
+            />
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
