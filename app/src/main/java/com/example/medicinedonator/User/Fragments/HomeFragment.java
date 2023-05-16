@@ -95,7 +95,7 @@ public class HomeFragment extends Fragment {
 
         final ProgressDialog progressDialog = new ProgressDialog(getContext());
         progressDialog.setTitle("Please wait");
-        progressDialog.setMessage("Uploading");
+        progressDialog.setMessage("Getting data...");
         progressDialog.setCancelable(false);
         progressDialog.show();
 

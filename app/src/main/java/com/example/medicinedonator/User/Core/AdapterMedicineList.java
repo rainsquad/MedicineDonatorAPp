@@ -1,30 +1,22 @@
 package com.example.medicinedonator.User.Core;
 
-import static android.content.Context.MODE_PRIVATE;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Color;
 import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.medicinedonator.R;
 import com.example.medicinedonator.User.Activities.RequestActvity;
-import com.example.medicinedonator.User.Fragments.RequestFragment;
 
-import java.util.ArrayList;
 import java.util.List;
 
 

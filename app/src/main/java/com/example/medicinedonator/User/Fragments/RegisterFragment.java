@@ -159,34 +159,19 @@ public class RegisterFragment extends Fragment {
 
 
         Interface retrofitAPI = retrofit.create(Interface.class);
-        Call<List<RecyclerData>> call = retrofitAPI.addUser(object1);
-        call.enqueue(new Callback<List<RecyclerData>>() {
+        Call<RecyclerData> call = retrofitAPI.addUser(object1);
+        call.enqueue(new Callback<RecyclerData>() {
             @Override
-            public void onResponse(Call<List<RecyclerData>> call, Response<List<RecyclerData>> response) {
-                if (response.isSuccessful()) {
+            public void onResponse(Call<RecyclerData> call, Response<RecyclerData> response) {
+                if (response.body()!=null) {
                     progressDialog.dismiss();
                     getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container, loginFragment).commit();
 
-
-                    // inside the on response method.
-                    // we are hiding our progress bar.
-                    //  loadingPB.setVisibility(View.GONE);
-                    // in below line we are making our card
-                    // view visible after we get all the data.
-                    // courseCV.setVisibility(View.VISIBLE);
-                    //    RecyclerData modal = response.body().get(1);
-                    // after extracting all the data we are
-                    // setting that data to all our views.
-//                    etFname.setText(modal.getFirstName());
-//                    etSurename.setText(modal.getLastName());
-//                    etAddress.setText(modal.getAddress());
-                    // we are using picasso to load the image from url.
-                    //Picasso.get().load(modal.getCourseimg()).into(courseIV);
                 }
             }
 
             @Override
-            public void onFailure(Call<List<RecyclerData>> call, Throwable t) {
+            public void onFailure(Call<RecyclerData> call, Throwable t) {
                 // displaying an error message in toast
                 progressDialog.dismiss();
                 Toast.makeText(getContext(), "Fail to get the data..", Toast.LENGTH_SHORT).show();

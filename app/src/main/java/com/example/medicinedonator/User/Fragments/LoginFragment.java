@@ -110,34 +110,11 @@ public class LoginFragment extends Fragment {
                 if (response.isSuccessful()) {
                   progressDialog.dismiss();
 
-//                    SharedPreferences preferences = getSharedPreferences(Constants.PREFERENCE_NAME, MODE_PRIVATE);
-//                    SharedPreferences.Editor editor = preferences.edit();
-//                    editor.putString(Constants.USER_FIRST_NAME,);
-//                    editor.putString(Constants.KEY_ID, responseBody.getUserDetailObject().getUserDetails().get(0).getId() );
-                    RecyclerData modal = response.body().get(1);
-                    String USER_ID =   modal.get_id();
-                    String USER_NAME = modal.getFirstName();
-
 
                     Intent intent = new Intent(getContext(), MainActivity.class);
-                    intent.putExtra("userid",USER_ID);
-                    intent.putExtra("firstname",USER_NAME);
 
                     startActivity(intent);
-                    // inside the on response method.
-                    // we are hiding our progress bar.
-                    //  loadingPB.setVisibility(View.GONE);
-                    // in below line we are making our card
-                    // view visible after we get all the data.
-                    // courseCV.setVisibility(View.VISIBLE);
 
-                    // after extracting all the data we are
-                    // setting that data to all our views.
-
-
-//                    etAddress.setText(modal.getAddress());
-                    // we are using picasso to load the image from url.
-                    //Picasso.get().load(modal.getCourseimg()).into(courseIV);
                 }
             }
 

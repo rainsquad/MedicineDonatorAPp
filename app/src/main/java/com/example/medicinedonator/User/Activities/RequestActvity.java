@@ -118,10 +118,8 @@ public class RequestActvity extends AppCompatActivity {
             int qtyFinal = a - b;
 
             object.put("Quantity", qtyFinal );
-            object.put("_id", id);
+            object.put("id", id);
 
-            System.out.println(object);
-            Toast.makeText(RequestActvity.this, id, Toast.LENGTH_SHORT).show();
             JsonParser parser  = new JsonParser();
             object1 =(JsonObject) parser.parse(object.toString());
 
@@ -138,7 +136,9 @@ public class RequestActvity extends AppCompatActivity {
                 if (response.body()!=null) {
                     Toast.makeText(RequestActvity.this, "Done", Toast.LENGTH_SHORT).show();
                     progressDialog.dismiss();
-
+                   Intent intent = new Intent(RequestActvity.this,MainActivity.class);
+                   startActivity(intent);
+                   finish();
 
                 }
             }

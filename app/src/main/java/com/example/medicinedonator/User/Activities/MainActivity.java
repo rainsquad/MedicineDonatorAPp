@@ -8,7 +8,6 @@ import android.view.MenuItem;
 import com.example.medicinedonator.R;
 import com.example.medicinedonator.User.Fragments.DonateFragment;
 import com.example.medicinedonator.User.Fragments.HomeFragment;
-import com.example.medicinedonator.User.Fragments.RequestFragment;
 import com.example.medicinedonator.User.Fragments.SearchFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
@@ -17,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
 
     HomeFragment homeFragment = new HomeFragment();
-    RequestFragment requestFragment = new RequestFragment();
+
     SearchFragment searchFragment = new SearchFragment();
     DonateFragment donateFragment = new DonateFragment();
 
@@ -44,9 +43,6 @@ public class MainActivity extends AppCompatActivity {
                         getSupportFragmentManager().beginTransaction().replace(R.id.container, searchFragment).commit();
                         return;
 
-                    case R.id.Request:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, requestFragment).commit();
-                        return;
 
 
                 }

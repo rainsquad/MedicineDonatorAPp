@@ -32,7 +32,7 @@ public interface Interface {
     Call<List<RecyclerData> >getFirstName(@Body JsonObject Object);
 
     @POST("user/add/")
-    Call<List<RecyclerData> >addUser(@Body JsonObject Object);
+    Call<RecyclerData>addUser(@Body JsonObject Object);
 
 
     @GET("medicine/")

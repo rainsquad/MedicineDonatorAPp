@@ -42,7 +42,7 @@ public class LoginRegistration extends AppCompatActivity {
 
 
                 txt1.setText("LOGIN");
-                getSupportFragmentManager().beginTransaction().replace(R.id.container, registerFragment).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.container, loginFragment).commit();
 
             }
         });
@@ -53,7 +53,7 @@ public class LoginRegistration extends AppCompatActivity {
                 txtLogin.setBackground(ContextCompat.getDrawable(LoginRegistration.this, R.drawable.round_button_white));
 
                 txt1.setText("SIGNUP");
-                getSupportFragmentManager().beginTransaction().replace(R.id.container, loginFragment).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.container, registerFragment).commit();
 
             }
         });
